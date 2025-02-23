@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let index = 0;
-    const text = "Demonstração Criativa com CSS";
+    const text = "Demonstração com CSS";
     const typingEffect = document.querySelector(".typing-effect");
     function typeText() {
         if (index < text.length) {

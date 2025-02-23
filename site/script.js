@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Efeito de Digitação
     let index = 0;
     const text = "Demonstração Criativa com CSS";
     const typingEffect = document.querySelector(".typing-effect");
@@ -12,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     typeText();
 
-    // Animação ao rolar a página
-    const elements = document.querySelectorAll(".scroll-animation");
+    const elements = document.querySelectorAll(".scroll-animation");//animação rolar pg
     function checkScroll() {
         elements.forEach(el => {
             const rect = el.getBoundingClientRect();
@@ -25,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 
-    // Botão "Voltar ao Topo"
-    const backToTop = document.getElementById("backToTop");
+
+    const backToTop = document.getElementById("backToTop");//botao voltar ao topo
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
             backToTop.style.display = "block";
@@ -38,8 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Alternar Modo Claro/Escuro
-    const toggleMode = document.getElementById("toggleMode");
+    const toggleMode = document.getElementById("toggleMode");//botao tema
     toggleMode.addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
         toggleMode.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀";
